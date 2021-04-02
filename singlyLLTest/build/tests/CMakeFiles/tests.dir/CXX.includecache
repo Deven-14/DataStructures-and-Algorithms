@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../lib/singlyLinkedList.h
+stdbool.h
+-
+
+/home/deven/level1-2/singlyLLTest/tests/ArrayTest.cpp
+iostream
+-
+gtest/gtest.h
+-
+singlyLinkedList.h
+-
+
+/home/deven/level1-2/singlyLLTest/tests/singlyLLTestMain.cpp
+iostream
+-
+gtest/gtest.h
+-
+cstdlib
+-
+ctime
+-
+singlyLinkedList.h
+-
+

@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC   -shared -Wl,-soname,libsinglyLL.so -o ../../lib/lib/libsinglyLL.so CMakeFiles/singlyLL.dir/SinglyLinkedList.c.o 

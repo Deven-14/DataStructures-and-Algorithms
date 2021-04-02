@@ -1,0 +1,101 @@
+Start testing: Feb 05 15:26 IST
+----------------------------------------------------------
+1/1 Testing: singlyLLTest
+1/1 Test: singlyLLTest
+Command: "/home/deven/level1-2/singlyLLTest/build/bin/tests"
+Directory: /home/deven/level1-2/singlyLLTest/build/tests
+"singlyLLTest" start time: Feb 05 15:26 IST
+Output:
+----------------------------------------------------------
+[==========] Running 30 tests from 6 test suites.
+[----------] Global test environment set-up.
+[----------] 10 tests from singlyLinkedListEdgeTest
+[ RUN      ] singlyLinkedListEdgeTest.addHeadWhenListEmpty
+[       OK ] singlyLinkedListEdgeTest.addHeadWhenListEmpty (0 ms)
+[ RUN      ] singlyLinkedListEdgeTest.addTailWhenListEmpty
+[       OK ] singlyLinkedListEdgeTest.addTailWhenListEmpty (0 ms)
+[ RUN      ] singlyLinkedListEdgeTest.removeHeadWhenListEmpty
+[       OK ] singlyLinkedListEdgeTest.removeHeadWhenListEmpty (0 ms)
+[ RUN      ] singlyLinkedListEdgeTest.removeTailWhenListEmpty
+[       OK ] singlyLinkedListEdgeTest.removeTailWhenListEmpty (0 ms)
+[ RUN      ] singlyLinkedListEdgeTest.removeHeadWhenListHasOneEle
+[       OK ] singlyLinkedListEdgeTest.removeHeadWhenListHasOneEle (0 ms)
+[ RUN      ] singlyLinkedListEdgeTest.removeTailWhenListHasOneEle
+[       OK ] singlyLinkedListEdgeTest.removeTailWhenListHasOneEle (0 ms)
+[ RUN      ] singlyLinkedListEdgeTest.removeDataWhenListEmpty
+[       OK ] singlyLinkedListEdgeTest.removeDataWhenListEmpty (0 ms)
+[ RUN      ] singlyLinkedListEdgeTest.removeDataWhenListHasOneMatchingEle
+[       OK ] singlyLinkedListEdgeTest.removeDataWhenListHasOneMatchingEle (0 ms)
+[ RUN      ] singlyLinkedListEdgeTest.removeDataWhenListHasTwoMatchingEle
+[       OK ] singlyLinkedListEdgeTest.removeDataWhenListHasTwoMatchingEle (0 ms)
+[ RUN      ] singlyLinkedListEdgeTest.removeDataWhenListHasAllMatchingEle
+[       OK ] singlyLinkedListEdgeTest.removeDataWhenListHasAllMatchingEle (0 ms)
+[----------] 10 tests from singlyLinkedListEdgeTest (0 ms total)
+
+[----------] 2 tests from singlyLinkedListAddTest
+[ RUN      ] singlyLinkedListAddTest.addHeadTest
+[       OK ] singlyLinkedListAddTest.addHeadTest (0 ms)
+[ RUN      ] singlyLinkedListAddTest.addTailTest
+[       OK ] singlyLinkedListAddTest.addTailTest (0 ms)
+[----------] 2 tests from singlyLinkedListAddTest (1 ms total)
+
+[----------] 3 tests from singlyLinkedListRemoveTest
+[ RUN      ] singlyLinkedListRemoveTest.removeHeadTest
+[       OK ] singlyLinkedListRemoveTest.removeHeadTest (0 ms)
+[ RUN      ] singlyLinkedListRemoveTest.removeTailTest
+[       OK ] singlyLinkedListRemoveTest.removeTailTest (0 ms)
+[ RUN      ] singlyLinkedListRemoveTest.removeDataTest
+[       OK ] singlyLinkedListRemoveTest.removeDataTest (0 ms)
+[----------] 3 tests from singlyLinkedListRemoveTest (0 ms total)
+
+[----------] 10 tests from singlyLinkedListArrEdgeTest
+[ RUN      ] singlyLinkedListArrEdgeTest.addHeadWhenListEmpty
+[       OK ] singlyLinkedListArrEdgeTest.addHeadWhenListEmpty (0 ms)
+[ RUN      ] singlyLinkedListArrEdgeTest.addTailWhenListEmpty
+[       OK ] singlyLinkedListArrEdgeTest.addTailWhenListEmpty (0 ms)
+[ RUN      ] singlyLinkedListArrEdgeTest.removeHeadWhenListEmpty
+[       OK ] singlyLinkedListArrEdgeTest.removeHeadWhenListEmpty (0 ms)
+[ RUN      ] singlyLinkedListArrEdgeTest.removeTailWhenListEmpty
+[       OK ] singlyLinkedListArrEdgeTest.removeTailWhenListEmpty (0 ms)
+[ RUN      ] singlyLinkedListArrEdgeTest.removeHeadWhenListHasOneEle
+[       OK ] singlyLinkedListArrEdgeTest.removeHeadWhenListHasOneEle (0 ms)
+[ RUN      ] singlyLinkedListArrEdgeTest.removeTailWhenListHasOneEle
+[       OK ] singlyLinkedListArrEdgeTest.removeTailWhenListHasOneEle (0 ms)
+[ RUN      ] singlyLinkedListArrEdgeTest.removeDataWhenListEmpty
+[       OK ] singlyLinkedListArrEdgeTest.removeDataWhenListEmpty (0 ms)
+[ RUN      ] singlyLinkedListArrEdgeTest.removeDataWhenListHasOneMatchingEle
+[       OK ] singlyLinkedListArrEdgeTest.removeDataWhenListHasOneMatchingEle (0 ms)
+[ RUN      ] singlyLinkedListArrEdgeTest.removeDataWhenListHasTwoMatchingEle
+[       OK ] singlyLinkedListArrEdgeTest.removeDataWhenListHasTwoMatchingEle (0 ms)
+[ RUN      ] singlyLinkedListArrEdgeTest.removeDataWhenListHasAllMatchingEle
+[       OK ] singlyLinkedListArrEdgeTest.removeDataWhenListHasAllMatchingEle (0 ms)
+[----------] 10 tests from singlyLinkedListArrEdgeTest (0 ms total)
+
+[----------] 2 tests from singlyLinkedListArrAddTest
+[ RUN      ] singlyLinkedListArrAddTest.addHeadTest
+[       OK ] singlyLinkedListArrAddTest.addHeadTest (0 ms)
+[ RUN      ] singlyLinkedListArrAddTest.addTailTest
+[       OK ] singlyLinkedListArrAddTest.addTailTest (0 ms)
+[----------] 2 tests from singlyLinkedListArrAddTest (0 ms total)
+
+[----------] 3 tests from singlyLinkedListArrRemoveTest
+[ RUN      ] singlyLinkedListArrRemoveTest.removeHeadTest
+[       OK ] singlyLinkedListArrRemoveTest.removeHeadTest (0 ms)
+[ RUN      ] singlyLinkedListArrRemoveTest.removeTailTest
+[       OK ] singlyLinkedListArrRemoveTest.removeTailTest (0 ms)
+[ RUN      ] singlyLinkedListArrRemoveTest.removeDataTest
+[       OK ] singlyLinkedListArrRemoveTest.removeDataTest (0 ms)
+[----------] 3 tests from singlyLinkedListArrRemoveTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 30 tests from 6 test suites ran. (1 ms total)
+[  PASSED  ] 30 tests.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"singlyLLTest" end time: Feb 05 15:26 IST
+"singlyLLTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Feb 05 15:26 IST

@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/tests.dir/singlyLLTestMain.cpp.o CMakeFiles/tests.dir/ArrayTest.cpp.o  -o ../bin/tests  -Wl,-rpath,/home/deven/level1-2/singlyLLTest/lib/lib ../../lib/lib/libsinglyLL.so /usr/lib/x86_64-linux-gnu/libgtest.a -lpthread 
