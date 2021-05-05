@@ -9,8 +9,7 @@ struct node
 };
 typedef struct node Node;
 
-extern Node* newNode(int data);
-inline Node* newNode(int data)
+Node* newNode(int data)
 {
 	Node* n=(Node*)malloc(sizeof(Node));
 	n->data=data;
@@ -30,8 +29,8 @@ struct stack
     s_Node *top;
 };
 typedef struct stack Stack;
-extern s_Node* create_node(struct node* data);
-inline s_Node* create_node(struct node* data)
+
+s_Node* create_node(struct node* data)
 {
     s_Node *n=malloc(sizeof(s_Node));
     n->data=data;
@@ -44,8 +43,7 @@ Stack* create_stack()
     s->top=NULL;
     return s;
 }
-extern void push(Stack *s,Node* data);
-inline void push(Stack *s,Node* data)
+void push(Stack *s,Node* data)
 {
     s_Node *new_node=create_node(data);
     new_node->next=s->top;//imp
@@ -112,7 +110,7 @@ void inOrder(Node *root)
 		return;
 	Stack *s=create_stack();
 	Node *curr=root;
-	while(!isEmpty(*s) || curr!=NULL)
+	while(!isEmpty(*s) || curr!=NULL)//this curr!=null is needed for first entry and then when there is only ele in stack, it is poped and put that value in curr, curr value is printed and then moved to it's right node, so there are nodes to be printed yet but the stack is empty, so this condition is imp
 	{
 		while(curr!=NULL)
 		{
@@ -134,7 +132,7 @@ void preOrder(Node *root)
 		return;
 	Stack *s=create_stack();
 	Node *curr=root;
-	while(!isEmpty(*s) || curr!=NULL)
+	while(!isEmpty(*s) || curr!=NULL)//this curr!=null is imp, coz if there is only one ele in stack and it is popped and put to curr, then stack is empty but there is still a node to be printed and go ahead from
 	{
 		while(curr!=NULL)
 		{
@@ -150,6 +148,26 @@ void preOrder(Node *root)
 		}
 	}
 	printf("\n");
+	free(s);
+}
+
+void preOrder2(Node *root)
+{
+	if(root == NULL)
+		return;
+	Stack *s = create_stack();
+	push(s, root);
+	Node *curr;
+	while(!isEmpty(*s))
+	{
+		curr = Top(*s);
+		pop(s);
+		printf("%d ", curr->data);
+		if(curr->right)
+			push(s, curr->right);
+		if(curr->left)
+			push(s, curr->left);
+	}
 	free(s);
 }
 
@@ -183,6 +201,34 @@ void postOrder(Node *root)
 	}while(!isEmpty(*s));
 	free(s);
 	printf("\n");
+}
+
+void postOrder2(Node *root)
+{
+	if(root == NULL)
+		return;
+	Stack *s1 = create_stack();
+	Stack *s2 = create_stack();
+	push(s1, root);
+	Node *curr;
+	while(!isEmpty(*s1))
+	{
+		curr = Top(*s1);
+		pop(s1);
+		push(s2, curr);
+		if(curr->left)
+			push(s1, curr->left);
+		if(curr->right)
+			push(s1, curr->right);
+	}
+	while(!isEmpty(*s2))
+	{
+		curr = Top(*s2);
+		printf("%d ", curr->data);
+		pop(s2);
+	}
+	free(s1);
+	free(s2);
 }
 
 void postOrder_free(Node *root)
@@ -226,7 +272,9 @@ int main()
 	Node *root=make_tree(n,t);
 	inOrder(root);
 	preOrder(root);
+	//preOrder2(root);
 	postOrder(root);
+	//postOrder2(root);
 	postOrder_free(root);
 	return 0;
 }
