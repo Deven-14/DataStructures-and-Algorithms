@@ -88,7 +88,7 @@ void randomized_quick_sort(vector<int> &a, int l, int r) {
 		swap(a[l], a[k]);
 		Pair p = partition3(a, l, r);
 		
-		if((p.p1 - l) > (r - p.p2))
+		if((p.p1 - l) < (r - p.p2))// '<' coz, we should make a call to small subarray, coz then we'll do recursive call on sub of that subarray, so it'll be even smaller, and hence smaller arrays implies less recursive calls, so smaller array
 		{
 			randomized_quick_sort(a, l, p.p1 - 1);
 			l = p.p2 + 1;
